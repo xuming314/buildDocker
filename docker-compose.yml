@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  server:
+    build: .
+    image: do5713/build-server:latest
+    container_name: build-server

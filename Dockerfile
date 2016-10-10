@@ -19,11 +19,10 @@ RUN npm install -g nurl-cli
 
 RUN mkdir /packages
 COPY packages/. /packages
-RUN cd /packages
-RUN npm install package-common.json
-RUN npm install package-build.json
-RUN npm install package-client.json
-RUN npm install package-server.json
+RUN cd /packages/common && npm install
+RUN cd /packages/build && RUN npm install
+RUN cd /packages/server && RUN npm install
+RUN cd /packages/client && RUN npm install
 RUN cd / && rm -rf /packages
 
 EXPOSE 80

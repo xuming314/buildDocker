@@ -1,7 +1,6 @@
 FROM node:latest
 
 RUN npm config set cache /.npm
-RUN npm config set registry https://registry.npm.taobao.org
 
 RUN sudo npm install -g pm2
 RUN sudo npm install -g grunt-cli

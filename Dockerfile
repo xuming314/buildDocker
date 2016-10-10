@@ -16,11 +16,12 @@ RUN npm install -g eslint
 RUN npm install -g nurl-cli
 #RUN npm install -g appium
 
-COPY jobs/. /packages/
-RUN cd /packages \
-    && npm install package-common.json \
-    && npm install package-build.json \
-    && npm install package-client.json \
-    && npm install package-server.json \
-    && cd .. \
-    && rm -rf /packages
+
+RUN mkdir /packages
+COPY jobs/. /packages
+RUN cd /packages
+RUN npm install package-common.json
+RUN npm install package-build.json
+RUN npm install package-client.json
+RUN npm install package-server.json
+RUN cd / && rm -rf /packages

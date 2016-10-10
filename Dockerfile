@@ -13,8 +13,8 @@ RUN npm install -g electron-prebuilt
 RUN npm install -g electron-packager
 RUN npm install -g electron-builder
 RUN npm install -g eslint
-RUN npm install -g appium
 RUN npm install -g nurl-cli
+#RUN npm install -g appium
 
 COPY jobs/. /packages
 RUN cd /packages \

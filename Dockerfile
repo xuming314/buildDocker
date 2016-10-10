@@ -17,5 +17,10 @@ RUN npm install -g appium
 RUN npm install -g nurl-cli
 
 COPY jobs/. /packages
-
-
+RUN cd /packages \
+    && npm install package-common.json \
+    && npm install package-build.json \
+    && npm install package-client.json \
+    && npm install package-server.json \
+    && cd .. \
+    && rm -rf /packages

@@ -7,7 +7,7 @@ RUN npm install -g grunt-cli
 RUN npm install -g webpack
 RUN npm install -g webot-cli
 RUN npm install -g babel-cli
-RUN npm nstall -g karma-cli
+RUN npm install -g karma-cli
 RUN npm install -g react-native-cli
 RUN npm install -g electron-prebuilt
 RUN npm install -g electron-packager

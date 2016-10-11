@@ -3,5 +3,5 @@ version: '2'
 services:
   server:
     build: .
-    image: do5713/build-server:16.10.11
+    image: do5713/build-server:16.10.11-e
     container_name: build-server

@@ -30,6 +30,7 @@
     "react-slick": "^0.12.2",
     "react-sticky": "^5.0.2",
     "react-tap-event-plugin": "^1.0.0",
+    "react-templates": "^0.5.4",
     "redux": "^3.5.2",
     "redux-act": "^0.4.2",
     "redux-saga": "^0.10.4",

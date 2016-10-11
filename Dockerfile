@@ -14,7 +14,6 @@ RUN npm install -g eslint
 RUN npm install -g nurl-cli
 #RUN npm install -g appium
 
-
 RUN mkdir /packages
 COPY packages/. /packages
 RUN cd /packages/common && npm install

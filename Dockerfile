@@ -1,4 +1,4 @@
-FROM zzrot/alpine-node:latest
+FROM node:4
 
 RUN npm install -g pm2
 RUN npm install -g grunt-cli

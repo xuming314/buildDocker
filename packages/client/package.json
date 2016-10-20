@@ -27,6 +27,7 @@
     "react-native-wechat-ios": "^0.2.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.0",
+	"react-templates": "0.5.2",
     "react-slick": "^0.12.2",
     "react-sticky": "^5.0.2",
     "react-tap-event-plugin": "^1.0.0",

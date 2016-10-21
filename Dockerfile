@@ -1,5 +1,4 @@
 FROM node:latest
-RUN npm config set registry https://registry.npm.taobao.org
 RUN npm install -g pm2
 RUN npm install -g grunt-cli
 RUN npm install -g webpack

@@ -1,5 +1,4 @@
-FROM node:4
-
+FROM node:latest
 #RUN npm install -g pm2
 #RUN npm install -g grunt-cli
 #RUN npm install -g webpack
